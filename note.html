@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>notes tool</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='./note.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+
+
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm">
+		   <div class="wrapper clearfix" >
+		<div id="note" class='image'>
+			<div class="notepaper">
+          <figure class="quote">
+			<div class="curly-quotes">
+				取 出所需干海参，放入冷水中浸泡两天（浸泡期间于冰箱冷藏，每天换一次水），然后于冷水中煮至沸腾再换温火煮60分钟左右（视自己的口感喜好而适当调整煮制 时间），煮海参时注意用筷子经常搅拌，以防海参粘锅底。海参煮好的标准是用筷子的细端能轻松扎透海参的体壁。海参煮好后让其自然冷却，然后取出放入凉水 中，并置于冰箱冷藏，再浸泡2~3天即可食用（冷藏期间每天换一次水。
+			</div>
+			  <figcaption class="quote-by">— 加美外贸</figcaption>
+		</figure>
+         </div>
+		</div>		
+	</div>
+		</div>
+
+		<div class="col-sm">
+			<div class="form-group wrapper">
+			  <label for="description">Description:</label>
+			  <textarea class="form-control" rows="20" id="description"></textarea>
+			</div>
+		</div>
+		
+		<div class="col-sm">
+			<input type="text" class="form-control" style="margin-top:300px; width:300px !important;" id = "imageName" placeholder="imageName" aria-label="imageName" aria-describedby="basic-addon1" value="note">
+		 <button type="button" class="btn btn-default" style="margin-top:20px" id='download'>download</button>
+		</div>
+		</div>
+	
+	</div>
+
+	
+	<script src="node_modules/dom-to-image/dist/dom-to-image.min.js"></script>
+	<script src="note.js"></script>
+</body>
+</html>
